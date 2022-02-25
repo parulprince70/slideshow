@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .slideshow{
+            margin:auto; 
+            height:500px;
+            width:80%;
+        }
+        #slideshow{
+            height:500px;
+            width:560px;
+        }
+        /* img{
+            height:500px;
+            width:400px;
+        } */
+
+    </style>
+</head>
+<body>
+    <div class="slideshow" id="main">
+        <h1>
+           IMAGE SLIDESHOW 
+        </h1>
+        <hr>
+        <img src="one.jpg" id="slideshow">
+
+    </div>
+    <script>
+        var images =["one.jpg","two.jpg","three.jpg","four.jpg","five.jpg","six.jpg" ];
+      
+        var i=0;
+
+        function slide(){
+            document.getElementById("slideshow").src = images[i];
+           if(i<(images.length-1))
+           i++;
+           else
+           i=0;
+        }
+        setInterval(slide, 2000);
+    </script>
+</body>
+</html>    
