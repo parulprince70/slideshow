@@ -1,0 +1,14 @@
+.slideshow{
+    background-color: rgb(233, 120, 208);
+    margin:auto; 
+    height:570px;
+    width:72%;
+}
+#slideshow{
+    height:500px;
+    width:500px;
+}
+/* img{
+    height:500px;
+    width:400px;
+} */
